@@ -281,6 +281,8 @@ class StripeService extends Component
 		$billingDetails = $token['billing_details'];
 		$address = $billingDetails['address'] ?? null;
 
+		return;
+		
 		if (empty($address))
 			return;
 
